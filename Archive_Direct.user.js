@@ -116,8 +116,7 @@ function main(){
 
 
             if(item!=-1){
-                window.onload=function(){
-                    ac_list[item].scrollIntoView({block: "center"}); }}
+                ac_list[item].scrollIntoView({ behavior: "instant", block: "center"}); }
 
         } // serch_type_new()
 
@@ -147,8 +146,7 @@ function main(){
 
 
             if(item!=-1){
-                window.onload=function(){
-                    ac_list[item].scrollIntoView({block: "center"}); }}
+                ac_list[item].scrollIntoView({ behavior: "instant", block: "center"}); }
 
         } // serch_type_old()
 
