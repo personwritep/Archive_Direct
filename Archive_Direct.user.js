@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Archive Direct
 // @namespace        http://tampermonkey.net/
-// @version        0.5
+// @version        0.4
 // @description        記事日付から記事一覧内の記事を検索
 // @author        Ameba Blog User
 // @match        https://ameblo.jp/*
@@ -29,9 +29,7 @@ function main(){
         blog_page(); }
     else if(path.includes('/archive')){ // 記事一覧
         style_in();
-        setTimeout(()=>{
-            blog_archive();
-        }, 200); }
+        blog_archive(); }
 
 
 
